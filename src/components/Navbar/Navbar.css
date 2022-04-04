@@ -3,3 +3,26 @@
     background: #242D38;
     height: 52px;
 }
+
+ul li{
+    display: block;
+    padding: 8px;
+    margin: -24px 10px 0px 0px;
+    list-style-type: none;
+    display: inline;
+    float: left
+}
+
+a {
+    font-family: 'Open Sans';
+font-style: normal;
+font-weight: 400;
+font-size: 12px;
+line-height: 20px;
+color: #A1A9B5;
+text-decoration: none
+}
+
+a:hover {
+    color: #FFFFFF;
+}

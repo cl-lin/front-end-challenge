@@ -8,7 +8,7 @@ console.log('navbar')
     return (
         <nav className ="navbar">
             <div className="logo">
-                <img className="logo-img" src="../../images/logo.png" alt="logo"/>
+                <img className="logo-img" src= "../../logo.png" alt="logo"/>
             </div>
             <ul>
                 {NavbarMenu.map((menu, index) => {
