@@ -1,16 +1,4 @@
 
-// export default function NavbarMenu () {
-//     console.log('navbar')
-//         return (
-//     <ul>
-//         <li href="">Classes</li>
-//         <li>Lesson</li>
-//         <li>Library</li>
-//     </ul>
-//         )
-//     }
-    
-
 const NavbarMenu = [
     {
         title: 'Classes',

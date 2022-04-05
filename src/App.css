@@ -1,12 +1,11 @@
 body {
-   /* box-sizing: border-box; */
-   margin: 0;
-   padding: 0;
-   background: #6C7988;
-   font-family: 'Open Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 20px;
-color: #A1A9B5;
+  margin: 0;
+  padding: 0;
+  background: #6C7988;
+  font-family: 'Open Sans';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 20px;
+  color: #A1A9B5;
 }

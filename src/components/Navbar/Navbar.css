@@ -1,13 +1,22 @@
+.logo-img {
+    height: 20px;
+    padding: 15px;
+}
+
+.logo-img:hover {
+    opacity: 50%;
+}
+
 .navbar {
     box-sizing: border-box;
     background: #242D38;
     height: 52px;
 }
 
-ul li{
+ul li {
     display: block;
     padding: 8px;
-    margin: -24px 10px 0px 0px;
+    margin: -3px 10px 0px -10px;
     list-style-type: none;
     display: inline;
     float: left
@@ -15,14 +24,19 @@ ul li{
 
 a {
     font-family: 'Open Sans';
-font-style: normal;
-font-weight: 400;
-font-size: 12px;
-line-height: 20px;
-color: #A1A9B5;
-text-decoration: none
+    font-style: normal;
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 20px;
+    color: #A1A9B5;
+    text-decoration: none
 }
 
 a:hover {
     color: #FFFFFF;
 }
+
+.flex-container {
+    display: flex;
+    flex-direction: row;
+  }
