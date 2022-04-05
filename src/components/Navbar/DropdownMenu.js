@@ -2,6 +2,6 @@
 export default function DropdownMenu () {
     console.log('dropdown')
         return (
-    <h3>dropdown</h3>
+    <a className="nav-link" href="/">teacher@school.org</a>
         )
     }

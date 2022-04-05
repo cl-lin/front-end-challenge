@@ -1,20 +1,10 @@
-
-const NavbarMenu = [
-    {
-        title: 'Classes',
-        url: '#',
-        className: 'nav-links'
-    },
-    {
-        title: 'Lessons',
-        url: '#',
-        className: 'nav-links'
-    },
-    {
-        title: 'Libraries',
-        url: '#',
-        className: 'nav-links'
-    },
-]
-
-export default NavbarMenu
+export default function NavbarMenu () {
+    console.log('navbarMenu')
+        return (
+    <ul>
+        <li><a className="class-link" href="/">Class</a></li>
+        <li><a className="nav-link" href="/">Lessons</a></li>
+        <li><a className="nav-link" href="/">Libraries</a></li>
+    </ul>
+        )
+    }
