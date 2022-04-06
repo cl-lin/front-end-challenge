@@ -1,5 +1,6 @@
 // import arrow from '../../images/icon-arrow.svg'
 import { ReactComponent as Arrow } from '../../images/icon-arrow.svg'
+import { ReactComponent as UpArrow } from '../../images/icon-arrow-up.svg'
 import React, {useState} from 'react';
 import DropdownItem from "./DropdownItem"
 

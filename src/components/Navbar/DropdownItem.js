@@ -4,7 +4,7 @@ export default function DropdownItem() {
 
     return (
         <section className="menu menu-box">
-            <div className="menu-item">
+            <div className="menu-item divider">
                 student@school.org
             </div>
             <div className="menu-item">
