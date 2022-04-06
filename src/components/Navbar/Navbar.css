@@ -8,22 +8,22 @@
     font-size: 12px;
 }
 
+
 .nav-flex{
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
     padding: 30px 10px;
 }
 
 .logo-img {
     height: 20px;
-    padding: 15px;
+    padding: 15px 10px 15px 15px;
 }
 
 .logo-img:hover {
     opacity: 50%;
 }
-
 
 .class-link {
     color: #FFFFFF;
@@ -39,47 +39,38 @@
     color: #FFFFFF;
 }
 
-ul li {
-    display: inline-block;
-    vertical-align: top;
-     padding: 8px;
-    margin: -3px 10px 0px -10px;
-}
-
-/*
-a {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 400;
-    font-size: 12px;
-    line-height: 20px;
-    color: #A1A9B5;
-    text-decoration: none
-}
-
-a:hover {
+.nav-link:hover .arrow{
     color: #FFFFFF;
 }
 
-.flex-container {
-    display: flex;
-    flex-direction: row;
-    /* justify-content: flex-start; */
-  /* }
-
-.nav-link-flex {
-    flex-grow: 1;
+ul {
+    list-style-type: none;
+    margin: -10px;
+    padding: 0px;
 }
 
-
-.user-flex {
+ul li {
     display: inline-block;
     vertical-align: top;
-     padding: 8px;
-    margin: -3px 10px 0px -10px;
+    padding-left: 16px;
+}
 
-} */
+.dropdown-position {
+    margin-left: auto;
+}
 
-/* .arrow:hover {
-    fill: #FFFFFF;
-} */
+.arrow {
+    padding: 15px 10px 15px 10px;
+    vertical-align: middle;
+}
+
+.arrow:hover {
+    fill:#FFFFFF;
+}
+
+.email-add {
+    margin-bottom: auto;
+    vertical-align: middle;
+  display: inline-block;
+}
+
