@@ -13,11 +13,11 @@ export default function Navbar (props) {
 
                  <img className="logo-img" src={logo} alt="logo"/>
             <div>
-                 <NavbarMenu user={props.user} ifTeacher={props.ifTeacher} ifStudent={props.ifStudent}/> 
+                 <NavbarMenu user={props.user} checkUser={props.checkUser}/> 
             </div>
 
             <div className="dropdown-position">
-                <DropdownMenu user={props.user} ifTeacher={props.ifTeacher} ifStudent={props.ifStudent}/>
+                <DropdownMenu user={props.user} checkUser={props.checkUser}/>
             </div>
         </nav>
     )

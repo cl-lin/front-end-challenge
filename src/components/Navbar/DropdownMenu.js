@@ -20,7 +20,7 @@ export default function DropdownMenu (props) {
             }
                 <Arrow className="arrow"/>
                 {open === true && 
-                <DropdownItem user={props.user} ifTeacher={props.ifTeacher} ifStudent={props.ifStudent}/>
+                <DropdownItem user={props.user} checkUser={props.checkUser}/>
                 }
             </>
         )
