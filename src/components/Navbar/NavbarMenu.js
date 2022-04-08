@@ -1,5 +1,5 @@
-export default function NavbarMenu () {
-    console.log('navbarMenu')
+export default function NavbarMenu (props) {
+    console.log('NavbarMenu ', props)
         return (
     <ul>
         <li><a className="class-link" href="/">Class</a></li>

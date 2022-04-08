@@ -79,7 +79,6 @@ ul li {
     font-style: normal;
     font-weight: 400;
     font-size: 13px;
-    /* identical to box height */ 
     align-items: center;
 }
 
@@ -95,8 +94,14 @@ ul li {
 }
 
 .menu-item {
-    padding: 10px;
+    padding: 8px;
     text-align: left;
+}
+
+.item-top {
+margin-top: 5px;
+padding: 8px;
+text-align: left;
 }
 
 .menu-item:hover {
@@ -104,6 +109,11 @@ ul li {
     border-radius: 3px;
 }
 
-.divider {
+.menu-divider {
     border-bottom: 1px solid #A1A9B5
+}
+
+.dropdown-link {
+    color: #242D38;
+    text-decoration: none;
 }
