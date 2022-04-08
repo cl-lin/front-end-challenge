@@ -5,8 +5,9 @@ import Navbar from './components/Navbar/Navbar';
 export default function App() {
   let [user, setUser] = useState(true)
 
-  const ifTeacher = () => {
-    setUser = !user
+  const ifTeacher = (isUser) => {
+    console.log('isUser', isUser);
+    setUser(isUser)
   }
 
   return (
