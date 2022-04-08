@@ -6,16 +6,21 @@ import DropdownItem from "./DropdownItem"
 
 
 export default function DropdownMenu (props) {
+    // dropdown menu open/close
     const [open, setOpen] = useState(false);
-
-    console.log('DropdownMenu', props)
 
         return (
             <>
-                <a className="nav-link email-add" onClick={() => setOpen(!open)}>teacher@school.org</a>
+            {
+            (
+                props.user === true
+                ? <a className="nav-link email-add" onClick={() => setOpen(!open)}>teacher@school.org</a>
+                : <a className="nav-link email-add" onClick={() => setOpen(!open)}>student@school.org</a>
+            )
+            }
                 <Arrow className="arrow"/>
                 {open === true && 
-                <DropdownItem user={props.user} ifTeacher={props.ifTeacher} />
+                <DropdownItem user={props.user} ifTeacher={props.ifTeacher} ifStudent={props.ifStudent}/>
                 }
             </>
         )
