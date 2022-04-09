@@ -6,8 +6,12 @@ import DropdownItem from "./DropdownItem"
 
 
 export default function DropdownMenu (props) {
-    // dropdown menu open/close
+    // makes dropdown menu open/sclose
     const [open, setOpen] = useState(false);
+
+ function toggleDropdown() {
+     setOpen(false)
+ }
 
         return (
             <>
@@ -19,8 +23,11 @@ export default function DropdownMenu (props) {
             )
             }
                 <Arrow className="arrow"/>
-                {open === true && 
-                <DropdownItem user={props.user} checkUser={props.checkUser}/>
+                {open === true
+                    ? 
+                        <DropdownItem user={props.user} checkUser={props.checkUser} toggleDropdown={toggleDropdown}/>
+                    :
+                        null
                 }
             </>
         )

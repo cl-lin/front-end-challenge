@@ -12,8 +12,6 @@ export default function App() {
       setUser(true)
     }
 
-
-
   }
   return (
     <div className="App">

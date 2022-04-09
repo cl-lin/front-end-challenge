@@ -1,20 +1,20 @@
 import './Navbar.css'
 
 export default function DropdownItem(props) {
-    console.log('DropdownItem', props)
 
-const checkUser = () => {
-    props.checkUser()
-}
-
+    function handleCheck() {
+        props.checkUser()
+        props.toggleDropdown()
+    }
+    
     return (
-        <section className="menu menu-box">
+        <section className="menu menu-box ">
             <div className="menu-item menu-divider item-top">
             {
                 (
                 props.user === true
-                ? <a className="dropdown-link" onClick={checkUser} >student@school.org</a>
-                : <a className="dropdown-link" onClick={checkUser} >teacher@school.org</a>
+                ? <a className="dropdown-link" onClick={handleCheck} >student@school.org</a>
+                : <a className="dropdown-link" onClick={handleCheck} >teacher@school.org</a>
                 )
             }
             </div>
