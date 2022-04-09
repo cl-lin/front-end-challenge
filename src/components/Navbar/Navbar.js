@@ -6,8 +6,6 @@ import logo from '../../images/logo.svg'
 // import arrow from '../../images/icon-arrow.svg'
 
 export default function Navbar (props) {
-
-    console.log('Navbar', props)
     return (
         <nav className="navbar nav-flex">
 
