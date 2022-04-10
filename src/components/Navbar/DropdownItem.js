@@ -9,7 +9,7 @@ export default function DropdownItem(props) {
     
     return (
         <section className="menu menu-box ">
-            <div className="menu-item menu-divider item-top">
+            <div className="menu-item item-top">
             {
                 (
                 props.user === true
@@ -18,7 +18,7 @@ export default function DropdownItem(props) {
                 )
             }
             </div>
-            <div className="menu-item">
+            <div className="menu-item menu-divider">
                 Settings
             </div>
             <div className="menu-item">
