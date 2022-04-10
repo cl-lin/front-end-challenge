@@ -7,7 +7,7 @@ import classNames from 'classnames';
 
 export default function DropdownMenu (props) {
 
-    // makes dropdown menu open/sclose
+    // makes dropdown menu open/close
     const [open, setOpen] = useState(false);
     const [arrow, setArrow] = useState(false);
     
