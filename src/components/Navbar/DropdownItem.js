@@ -13,8 +13,8 @@ export default function DropdownItem(props) {
             {
                 (
                 props.user === true
-                ? <a className="dropdown-link" onClick={handleCheck} >student@school.org</a>
-                : <a className="dropdown-link" onClick={handleCheck} >teacher@school.org</a>
+                ? <a href className="dropdown-link" onClick={handleCheck} >student@school.org</a>
+                : <a href className="dropdown-link" onClick={handleCheck} >teacher@school.org</a>
                 )
             }
             </div>

@@ -6,7 +6,7 @@ import DropdownItem from "./DropdownItem"
 
 
 export default function DropdownMenu (props) {
-    
+
     // makes dropdown menu open/sclose
     const [open, setOpen] = useState(false);
     const [arrow, setArrow] = useState(false);
@@ -19,8 +19,8 @@ export default function DropdownMenu (props) {
             {
                 (
                     props.user === true
-                        ?  <a className="nav-link email-add" onClick={() => setOpen(!open)}>teacher@school.org </a> 
-                        :   <a className="nav-link email-add" onClick={() => setOpen(!open)}>student@school.org </a>
+                        ?  <a href className="nav-link email-add" onClick={() => setOpen(!open)}>teacher@school.org </a> 
+                        :   <a  href className="nav-link email-add" onClick={() => setOpen(!open)}>student@school.org </a>
                 )
             }
             {
