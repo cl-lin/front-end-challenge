@@ -9,7 +9,7 @@ export default function DropdownItem(props) {
     
     return (
         <section className="menu menu-box ">
-            <div className="menu-item item-top">
+        <div className="menu-item item-top">
             {
                 (
                 props.user === true
@@ -17,13 +17,13 @@ export default function DropdownItem(props) {
                 : <a href className="dropdown-link" onClick={handleCheck} >teacher@school.org</a>
                 )
             }
-            </div>
-            <div className="menu-item menu-divider">
-                Settings
-            </div>
-            <div className="menu-item">
-                Sign Out
-            </div>
+        </div>
+        <div className="menu-item menu-divider">
+            Settings
+        </div>
+        <div className="menu-item">
+            Sign Out
+        </div>
         </section>
 
     )

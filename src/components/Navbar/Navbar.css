@@ -30,11 +30,6 @@
     text-decoration: none;
 }
 
-/* .nav-link {
-    color: #A1A9B5;
-    text-decoration: none;
-} */
-
 .nav-link-email {
     color: #A1A9B5;
     text-decoration: none;
@@ -99,9 +94,9 @@ ul li {
 }
 
 .item-top {
-margin-top: 5px;
-padding: 8px;
-text-align: left;
+    margin-top: 5px;
+    padding: 8px;
+    text-align: left;
 }
 
 .menu-item:hover {

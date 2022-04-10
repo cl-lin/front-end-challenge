@@ -19,22 +19,22 @@ export default function DropdownMenu (props) {
     
         return (
             <>
-            {
-                (
-                    props.user === true
-                        ?  <a className={activeDropdown} onClick={() => setOpen(!open)}>teacher@school.org </a> 
-                        :   <a className={activeDropdown} onClick={() => setOpen(!open)}>student@school.org </a>
-                )
-            }
-            {
-                open === false
-                    ? <Arrow className="arrow" onClick={() => setArrow(true)}/>
-                    : <UpArrow className="arrow" onClick={() => setArrow(false)}/>
-            }
-                {open === true
-                    ? <DropdownItem user={props.user} checkUser={props.checkUser} toggleDropdown={toggleDropdown}/>  
-                    : null
-            }
+                {
+                    (
+                        props.user === true
+                            ?  <a className={activeDropdown} onClick={() => setOpen(!open)}>teacher@school.org </a> 
+                            :  <a className={activeDropdown} onClick={() => setOpen(!open)}>student@school.org </a>
+                    )
+                }
+                {
+                    open === false
+                        ? <Arrow className="arrow" onClick={() => setArrow(true)}/>
+                        : <UpArrow className="arrow" onClick={() => setArrow(false)}/>
+                }
+                    {open === true
+                        ? <DropdownItem user={props.user} checkUser={props.checkUser} toggleDropdown={toggleDropdown}/>  
+                        : null
+                }
             </>
         )
-    }
+}
