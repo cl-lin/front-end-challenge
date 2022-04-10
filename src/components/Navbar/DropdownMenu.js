@@ -10,7 +10,7 @@ export default function DropdownMenu (props) {
     // makes dropdown menu open/close
     const [open, setOpen] = useState(false);
     const [arrow, setArrow] = useState(false);
-    
+    console.log(arrow)
     function toggleDropdown() {
         setOpen(false)
     }
