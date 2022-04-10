@@ -30,7 +30,12 @@
     text-decoration: none;
 }
 
-.nav-link {
+/* .nav-link {
+    color: #A1A9B5;
+    text-decoration: none;
+} */
+
+.nav-link-email {
     color: #A1A9B5;
     text-decoration: none;
 }
@@ -39,6 +44,7 @@
     color: #FFFFFF;
 }
 
+/* need to fix */
 .nav-link:hover .arrow{
     color: #FFFFFF;
 }
@@ -66,12 +72,7 @@ ul li {
 
 .arrow:hover {
     fill: white;
-}
-
-.email-add {
-    margin-bottom: auto;
-    vertical-align: middle;
-  display: inline-block;
+    stroke: white;
 }
 
 .menu {
@@ -110,6 +111,7 @@ text-align: left;
 }
 
 .menu-divider {
+    padding-top:10px;
     border-bottom: 1px solid #A1A9B5
 }
 
@@ -118,7 +120,7 @@ text-align: left;
     text-decoration: none;
 }
 
-/* .dropdown-user {
-    border: none;
-    background-color: transparent;
-} */
+.dropdown-active {
+    color: #FFFFFF
+}
+

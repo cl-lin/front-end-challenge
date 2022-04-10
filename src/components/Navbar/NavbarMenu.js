@@ -6,14 +6,14 @@ export default function NavbarMenu (props) {
                 { isTeacher === true 
                     ?
                         (<ul>
-                            <li><a className="class-link" href>Class</a></li>
-                            <li><a className="nav-link" href>Lessons</a></li>
-                            <li><a className="nav-link" href>Libraries</a></li>
+                            <li><a className="class-link" >Class</a></li>
+                            <li><a className="nav-link" >Lessons</a></li>
+                            <li><a className="nav-link" >Libraries</a></li>
                         </ul>)
                     :   
                         (<ul>
-                        <li><a className="class-link" href>Class</a></li>
-                        <li><a className="nav-link" href>Assignments</a></li>
+                        <li><a className="class-link" >Class</a></li>
+                        <li><a className="nav-link" >Assignments</a></li>
                         </ul>)
                 }
             </>

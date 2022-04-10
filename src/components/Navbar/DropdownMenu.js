@@ -3,24 +3,27 @@ import { ReactComponent as Arrow } from '../../images/icon-arrow.svg'
 import { ReactComponent as UpArrow } from '../../images/icon-arrow-up.svg'
 import React, {useState} from 'react';
 import DropdownItem from "./DropdownItem"
-
+import classNames from 'classnames';
 
 export default function DropdownMenu (props) {
 
     // makes dropdown menu open/sclose
     const [open, setOpen] = useState(false);
     const [arrow, setArrow] = useState(false);
+    
+    function toggleDropdown() {
+        setOpen(false)
+    }
 
- function toggleDropdown() {
-     setOpen(false)
- }
+    const activeDropdown = classNames("nav-link", {'dropdown-active': open === true})
+    
         return (
             <>
             {
                 (
                     props.user === true
-                        ?  <a href className="nav-link email-add" onClick={() => setOpen(!open)}>teacher@school.org </a> 
-                        :   <a  href className="nav-link email-add" onClick={() => setOpen(!open)}>student@school.org </a>
+                        ?  <a className={activeDropdown} onClick={() => setOpen(!open)}>teacher@school.org </a> 
+                        :   <a className={activeDropdown} onClick={() => setOpen(!open)}>student@school.org </a>
                 )
             }
             {
@@ -31,7 +34,7 @@ export default function DropdownMenu (props) {
                 {open === true
                     ? <DropdownItem user={props.user} checkUser={props.checkUser} toggleDropdown={toggleDropdown}/>  
                     : null
-                }
+            }
             </>
         )
     }
